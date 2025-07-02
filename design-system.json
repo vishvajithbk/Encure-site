@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "name": "Tech-Bio Dark Hero System",
+    "description": "A modern, high-contrast landing-page pattern for AI-centric biotech or deep-tech brands: updated sage-green palette, bold hero, minimalist navigation, luminous accent, and generous whitespace for premium feel.",
+    "version": "1.1",
+    "updated": "2024"
+  },
+  "theme": {
+    "colors": {
+      "surfaceLight": "#EDF1EC",
+      "surfaceDark": "#2D3749",
+      "accentPrimary": "#4D6BFF",
+      "accentPrimaryHover": "#6E85FF",
+      "textPrimary": "#2D3749",
+      "textSecondary": "#6F767E",
+      "textTertiary": "#87909B",
+      "textLight": "#73727D",
+      "overlayScrim": "rgba(45, 55, 73, 0.45)",
+      "white": "#FFFFFF",
+      "gradientLight": "#D8E5D6",
+      "gradientResearch": "#F5F9F4"
+    },
+    "typography": {
+      "fontFamilyBase": "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+      "fontWeights": {
+        "regular": 400,
+        "semiBold": 600,
+        "bold": 700
+      },
+      "fontSizes": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "md": "1rem",
+        "lg": "1.25rem",
+        "xl": "1.5rem",
+        "2xl": "2rem",
+        "3xl": "3.5rem"
+      },
+      "lineHeights": {
+        "tight": 1.1,
+        "normal": 1.4
+      }
+    },
+    "spacing": {
+      "0": "0px",
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "24px",
+      "6": "32px",
+      "7": "48px",
+      "8": "64px"
+    },
+    "radius": {
+      "small": "4px",
+      "medium": "8px",
+      "large": "12px"
+    },
+    "shadows": {
+      "low": "0px 1px 3px rgba(45, 55, 73, 0.12)",
+      "medium": "0px 4px 12px rgba(45, 55, 73, 0.16)",
+      "high": "0px 8px 24px rgba(45, 55, 73, 0.24)"
+    }
+  },
+  "layout": {
+    "grid": {
+      "columns": 12,
+      "columnGutter": "24px",
+      "maxWidth": "1440px",
+      "marginX": "auto"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px"
+    }
+  },
+  "components": {
+    "navigationBar": {
+      "height": "64px",
+      "background": "{theme.colors.surfaceDark}",
+      "elevation": "{theme.shadows.low}",
+      "logo": {
+        "size": "120px",
+        "placement": "left"
+      },
+      "menuItem": {
+        "gap": "{theme.spacing.5}",
+        "paddingY": "{theme.spacing.3}",
+        "fontSize": "{theme.typography.fontSizes.sm}",
+        "color": "{theme.colors.surfaceLight}",
+        "activeIndicator": {
+          "type": "underline",
+          "height": "2px",
+          "color": "{theme.colors.accentPrimary}"
+        },
+        "hoverColor": "{theme.colors.accentPrimary}"
+      }
+    },
+    "heroSection": {
+      "minHeight": "80vh",
+      "background": {
+        "gradient": "linear-gradient(135deg, {theme.colors.surfaceLight} 0%, {theme.colors.gradientLight} 100%)",
+        "overlay": "{theme.colors.overlayScrim}",
+        "animated": true
+      },
+      "contentAlignment": "center",
+      "contentMaxWidth": "60%",
+      "headline": {
+        "fontSize": "{theme.typography.fontSizes.3xl}",
+        "fontWeight": "{theme.typography.fontWeights.bold}",
+        "lineHeight": "{theme.typography.lineHeights.tight}",
+        "color": "{theme.colors.surfaceLight}",
+        "textAlign": "center",
+        "marginBottom": "{theme.spacing.5}",
+        "textShadow": "0 2px 4px rgba(0, 0, 0, 0.3)"
+      },
+      "subheadline": {
+        "fontSize": "{theme.typography.fontSizes.xl}",
+        "fontWeight": "{theme.typography.fontWeights.regular}",
+        "lineHeight": "{theme.typography.lineHeights.normal}",
+        "color": "rgba(255, 255, 255, 0.9)",
+        "textAlign": "center",
+        "maxWidth": "720px",
+        "marginX": "auto"
+      },
+      "primaryCTA": {
+        "padding": "{theme.spacing.3} {theme.spacing.7}",
+        "fontSize": "{theme.typography.fontSizes.md}",
+        "fontWeight": "{theme.typography.fontWeights.semiBold}",
+        "background": "{theme.colors.accentPrimary}",
+        "color": "{theme.colors.surfaceLight}",
+        "radius": "{theme.radius.medium}",
+        "hoverBackground": "{theme.colors.accentPrimaryHover}",
+        "shadow": "{theme.shadows.medium}",
+        "hoverTransform": "translateY(-2px)"
+      }
+    },
+    "featureCard": {
+      "background": "{theme.colors.white}",
+      "padding": "{theme.spacing.6}",
+      "radius": "{theme.radius.large}",
+      "shadow": "{theme.shadows.low}",
+      "border": "1px solid rgba(45, 55, 73, 0.1)",
+      "hoverShadow": "{theme.shadows.medium}",
+      "hoverTransform": "translateY(-4px)",
+      "icon": {
+        "size": "80px",
+        "background": "linear-gradient(135deg, {theme.colors.accentPrimary}, {theme.colors.accentPrimaryHover})",
+        "color": "{theme.colors.white}",
+        "radius": "50%"
+      }
+    }
+  },
+  "motion": {
+    "durationShort": "0.20s",
+    "durationMedium": "0.40s",
+    "easingStandard": "ease-in-out",
+    "elementAppear": {
+      "property": "opacity",
+      "from": 0,
+      "to": 1,
+      "delay": "0.15s",
+      "transform": "translateY(30px) to translateY(0)"
+    },
+    "staggerDelay": "150ms",
+    "parallax": {
+      "rate": -0.5,
+      "enabled": true
+    }
+  },
+  "accessibility": {
+    "contrastLevel": "AA",
+    "focusRing": "2px solid {theme.colors.accentPrimary}",
+    "prefersReducedMotion": "respect",
+    "keyboardNavigation": "enhanced",
+    "highContrast": "supported"
+  },
+  "implementation": {
+    "cssVariables": true,
+    "responsiveBreakpoints": true,
+    "animations": {
+      "intersectionObserver": true,
+      "smoothScrolling": true,
+      "staggeredAnimations": true
+    },
+    "performance": {
+      "throttledScrollEvents": true,
+      "lazyLoading": "ready",
+      "prefersReducedMotion": true
+    }
+  }
+} 
